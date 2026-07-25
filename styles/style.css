@@ -1,4 +1,43 @@
+@font-face {
+  font-family: "Open Sans";
+  src:
+    url("../fonts/OpenSans-Regular.woff2"), url(../fonts/OpenSans-Regular.woff);
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Bold.woff2"), url(../fonts/OpenSans-Bold.woff);
+}
+@font-face {
+  font-family: "Open Sans";
+  src:
+    url("../fonts/OpenSans-SemiBold.woff2"),
+    url(../fonts/OpenSans-SemiBold.woff);
+}
+@font-face {
+  font-family: "Archivo Black";
+  src:
+    url(../fonts/ArchivoBlack-Regular.woff2),
+    url(../fonts/ArchivoBlack-Regular.woff);
+}
 body {
   background-color: #111111;
   color: #ffffff;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-size: 18px;
+}
+h1,
+h2,
+h4 {
+  font-family: "Archivo Black";
+}
+.header {
+}
+.header-title {
+}
+.header-title__description {
+}
+.presentation-image {
+  width: 387px;
+  height: 500px;
 }
