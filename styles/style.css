@@ -42,33 +42,78 @@ h4 {
   align-items: center;
   gap: 40px;
 }
-.header-content {
-  flex: 1; /* Le permite expandirse para ocupar el espacio disponible */
+.header__content {
+  flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 20px; /* Separación vertical entre el H1, el P y el NAV */
+  gap: 20px;
 }
-.header-title__description {
-  line-height: 1.5; /* Mejora la legibilidad del texto largo */
+.header__title {
+  font-size: 72px;
+  margin: 0;
+}
+.header__subtitle {
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 15px;
+}
+.header__bio {
+  line-height: 1.5;
   margin-bottom: 10px;
+  margin-top: 30px;
 }
-.presentation-image {
+.header__image {
   width: 387px;
   height: 500px;
-  flex-shrink: 0; /* Evita que la imagen se comprima */
+  flex-shrink: 0;
   object-fit: cover;
 }
-.nav-links {
+.nav__links {
   display: flex;
   flex-direction: row;
   gap: 30px;
-  list-style: none; /* Elimina los puntos de las listas (li) */
+  list-style: none;
   padding: 0;
   margin: 0;
 }
-.nav-link {
+.nav__link {
   color: #ffffff;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
   cursor: pointer;
+}
+.skills {
+  padding: 0 120px;
+  margin: 110px 0 100px;
+}
+.skills__content {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.skills__title {
+  font-size: 40px;
+}
+.skills__icon {
+  width: 50px;
+}
+.projects {
+  padding: 0 120px;
+}
+.projects__title {
+  font-size: 40px;
+}
+.projects__grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.project-card {
+  background-color: #1c1c1c;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 590px;
 }
