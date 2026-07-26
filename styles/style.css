@@ -22,22 +22,53 @@
 body {
   background-color: #111111;
   color: #ffffff;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-size: 18px;
+  margin: 0;
 }
+
 h1,
 h2,
 h4 {
-  font-family: "Archivo Black";
+  font-family: "Archivo Black", sans-serif;
+  margin-top: 0;
 }
 .header {
+  padding: 40px 120px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
 }
-.header-title {
+.header-content {
+  flex: 1; /* Le permite expandirse para ocupar el espacio disponible */
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Separación vertical entre el H1, el P y el NAV */
 }
 .header-title__description {
+  line-height: 1.5; /* Mejora la legibilidad del texto largo */
+  margin-bottom: 10px;
 }
 .presentation-image {
   width: 387px;
   height: 500px;
+  flex-shrink: 0; /* Evita que la imagen se comprima */
+  object-fit: cover;
+}
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  list-style: none; /* Elimina los puntos de las listas (li) */
+  padding: 0;
+  margin: 0;
+}
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
 }
