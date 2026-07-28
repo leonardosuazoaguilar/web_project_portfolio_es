@@ -283,7 +283,8 @@ h4 {
 }
 .nav__link:hover,
 .project-card__link-icon:hover,
-.email:hover {
+.email:hover,
+.footer__social-icon:hover {
   opacity: 0.5;
 }
 @media screen and (max-width: 1024px) {
